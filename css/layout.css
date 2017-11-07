@@ -51,6 +51,11 @@ nav ul li{
 nav ul li:last-child{
 	margin-right: 20px;
 }
+
+.mobile-menu{
+	display: none;
+}
+
 .clear-float{
 	clear: both;
 }
@@ -60,7 +65,6 @@ nav ul li:last-child{
 	background-color: rgb(0,200,150);
 }
 .main{
-	/*height: 100%;*/
 	width: 90%;
 	margin: 0 auto;
 }
@@ -68,8 +72,8 @@ nav ul li:last-child{
 #products h2{
 	text-align: center;
 	font-size: 2.5em;
-	margin: 2em auto;
-	border-bottom: 1px orange solid;  
+	margin: 2em auto 1em;
+	/*border-bottom: 1px orange solid; */ 
 }
 
 #products .item-one{
@@ -240,8 +244,22 @@ line-height: 1.5em;
 	text-align: center;
 
 }
+
+
+
+#about>div dl:first-child dt{
+	background: url(../images/img_1.png) no-repeat center;
+	background-size: cover;
+}
+#about>div dl:last-child dt{
+	background: url(../images/hezuo.png) no-repeat center;
+	background-size: cover;
+}
+
+
+
 #about dl{
-	border: 1px rgb(255,0,0) solid;
+	/*border: 1px rgb(255,0,0) solid;*/
 	display: inline-block;
 	width:45%;
 	text-align: center;
@@ -294,9 +312,14 @@ line-height: 1.5em;
 
 .contact-info ul li{
 	font-size: 1.1em;
-	line-height: 2em;
+	line-height: 1.8em;
 	color: rgb(50,50,50);
 }
+
+.contact-info ul li i{
+	font-size: 1.2em;
+}
+
 .contact-info ul li a{
 	color: rgb(255,81,38);
 }
@@ -306,7 +329,7 @@ line-height: 1.5em;
 	height:400px;
 	border: 1px rgb(0,0,0) solid;
 	margin: 4em 0;
-	background: rgb(0,100,200) url(../images/beijing.jpg) no-repeat center;
+	background: rgb(46,173,166) url(../images/beijing.jpg) no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
@@ -369,8 +392,10 @@ line-height: 1.5em;
 }
 
 .item-two-sum p{
-	text-align: center;
-	margin:2em 0;
+	/*text-align: center;
+	margin:2em 0;*/
+	width: 500px;
+	margin:2em auto;
 }
 
 .item-two .pic-show{
@@ -429,6 +454,94 @@ line-height: 1.5em;
 
 }
 
+@media screen and (max-width:680px){
+
+.header{
+	/*width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(255,255,255,1);
+	z-index: 99;*/
+	
+	/*position: static;*/
+	/*background-color: transparent;*/
+	text-align: center;
+}
+
+.header img{
+	/*height: 60px;*/
+	/*border: 1px rgb(255,0,0) solid;*/
+	/*margin-top: 10px;*/
+	height:50px;
+	margin: 0 auto;
+
+}
+
+nav{
+	/*float: right; 
+	font-size: 15px;
+	font-family: 微软雅黑;
+	text-align: center;*/
+
+	position: fixed;
+	top: 0;
+	right: 0;
+	/*border: 1px rgb(0,0,0) solid;*/
+	height: 100%;
+	width: 70%;
+	background-color: rgba(0,0,0,0.9);
+	z-index: 100;
+	display: none;
+}
+
+nav ul{
+	margin-top:5em;
+}
+
+nav ul li{
+   /*float:left;
+   list-style: none;
+   height:80px;
+   line-height: 80px;
+   margin:0 10px;*/
+   /*border: 1px rgb(0,0,0) solid;*/
+   /*font-size: 1.2em;*/
+
+   float: none;
+   height:2em;
+   line-height: 2em;
+   margin: auto auto auto 2em;
+   /*border: 1px rgb(0,0,0) solid;*/
+   text-align: left;
+   letter-spacing:3px;
+}
+nav ul li a{
+	color: rgba(255,255,255,0.6);
+}
+nav ul li:last-child{
+	/*margin-right: 20px;*/
+	margin-right: auto;
+}
+
+.mobile-menu{
+	/*display: none;*/
+	display: inline-block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: rgb(100,100,100);
+	float: right;
+	font-size: 2em;
+	margin: 0.1em 0.6em;
+	/*border: 1px rgb(0,0,0) solid;*/
+	z-index: 102;
+
+}
+
+}
+
 
 
 @media screen and (max-width:600px){
@@ -445,13 +558,16 @@ line-height: 1.5em;
 
 
 .item-two-sum p{
+	/*width: 500px;
+	margin:2em auto;*/
+	width:auto;
 	text-align: justify;
 	margin:2em 1em;
 }
 
 
 .item-two-display article span{
-	border: 1px rgb(0,0,0) solid;
+	/*border: 1px rgb(0,0,0) solid;*/
 	margin:-10px 0 0 0;
 }
 
