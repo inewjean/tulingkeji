@@ -8,20 +8,21 @@
 <meta name="keywords" content="图灵,科技,互动营销,大数据,航旅,空港,机场" > -->
 <link rel="stylesheet" type="text/css" href="css/layout.css">
 <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/animation.css">
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8Sakt22WsWZznTr31OLmBQjIpOqU8yIt"></script>
 </head>
 <body>
 <!-- 导航条 -->
 <div class="header">
 	<img class="logo" src="images/3.png">
-	<div class="mobile-menu"><i class="fa fa-bars"></i> <!-- <i class="fa fa-close"></i> --></div>
+	<div class="mobile-menu"><i class="fa fa-bars"></i> <i class="fa fa-close"></i> </div>
 	<nav>
 	<ul>
-		<li><a href="#">首页</a></li>
-		<li><a href="#">产品</a></li>
-		<li><a href="#">案例</a></li>
-		<li><a href="#">关于我们</a></li>
-		<li><a href="#">联系方式</a></li>
+		<li><a href="#home">首页</a></li>
+		<li><a href="#products">产品</a></li>
+		<li><a href="#examples">案例</a></li>
+		<li><a href="#about">关于我们</a></li>
+		<li><a href="#contact">联系方式</a></li>
 	</ul>
 	</nav>
 	<div class="clear-float"></div>
@@ -112,6 +113,32 @@
 	<section id="examples">
 		<h2>有料</h2>
 		<div class="examples-display">
+			<div class="examples-slider-wrap">
+
+				<a href="#" class="item one">
+				</a><a href="#" class="item two">
+				</a><a href="#" class="item three">
+				</a><a href="#" class="item four">
+				</a><a href="#" class="item five">
+				</a>
+				<!-- <a href="#" class="item"><img src="images/img_01.jpg" alt=""></a>
+				<a href="#" class="item"><img src="images/img_02.jpg" alt=""></a>
+				<a href="#" class="item"><img src="images/img_03.jpg" alt=""></a>
+				<a href="#" class="item"><img src="images/img_04.jpg" alt=""></a>
+				<a href="#" class="item"><img src="images/img_05.jpg" alt=""></a> -->
+			</div>
+
+			<div class="ex-tab">
+				<div class="prev"><i class="fa fa-chevron-circle-left"></i></div> 
+				<div class="next"><i class="fa fa-chevron-circle-right"></i></div>
+			</div>
+			<div class="circle-btn">
+				<div class="one active"></div> 
+				<div class="two"></div> 
+				<div class="three"></div>
+				<div class="four"></div>
+				<div class="five"></div>
+			</div>
 			<!-- <span><img src="images/img_01.jpg" alt=""></span> 
 			<span><img src="images/img_02.jpg" alt=""></span> 
 			<span><img src="images/img_03.jpg" alt=""></span>
@@ -165,8 +192,8 @@
 		<small class="block">上海分公司：上海徐汇区南宁路970号徐汇万科中心B座6层</small> <br>
 		<small class="block">More Templates <a href="http://www.turing.asia/" target="_blank" title="图灵科技">图灵科技</a> - Collect from <a href="http://http://www.turing.asia/" title="图灵科技" target="_blank">图灵科技</a></small>
 	</div>
-
-
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
 <script type="text/javascript">
     //创建和初始化地图函数：
     function initMap(){
