@@ -63,8 +63,7 @@ nav ul li:last-child{ margin-right: 20px; }
 
 #products h2{
 	text-align: center;
-	font-size: 2.5em;
-	margin: 2em auto 1em;
+	margin: 2em auto;
 }
 
 #products .item-one{ margin-bottom: 2em; }
