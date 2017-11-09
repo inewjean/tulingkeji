@@ -196,17 +196,6 @@ nav ul li:last-child{ margin-right: 20px; }
 
 #about>div{ text-align: center; }
 
-#about>div dl:first-child dt{
-	background: url(../images/img_1.png) no-repeat center;
-	background-size: cover;
-}
-
-#about>div dl:last-child dt{
-	background: url(../images/hezuo.png) no-repeat center;
-	background-size: cover;
-}
-
-
 
 #about dl{
 	display: inline-block;
@@ -219,7 +208,7 @@ nav ul li:last-child{ margin-right: 20px; }
 #about dl dt{
 	height: 300px;
 	border-radius: 5%;
-	background-color: rgb(200,200,0);
+	overflow: hidden;
 }
 
 #about dl dd{ margin: 1em; }

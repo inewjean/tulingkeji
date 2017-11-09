@@ -14,10 +14,10 @@ $(document).ready(function(){
 
 	next_btn.click(function(){
 		wrap.animate({marginLeft:stp_wid},800,function(){
-			setTimeout(function(){
+			//setTimeout(function(){
 				$('.examples-slider-wrap .item:first').appendTo($('.examples-slider-wrap'));
 				wrap.css('marginLeft',0);
-			},50);
+			//},50);
 			
 		});
 
@@ -83,7 +83,32 @@ $(document).ready(function(){
 	}
 
 */
-	
+	//"关于我们"模块 交互动画
+	$('#about dt').click(function(){
+		var dtIndex=$(this).parent().index();
+		console.log(dtIndex);
+		$('#about .preview-picture img').addClass('pic-hide');
+		$('#about .preview-picture img').eq(dtIndex).removeClass('pic-hide');
+		$('#about .preview-picture').removeClass('pic-hide');
+
+		$('#about .preview-picture .fa-close').click(function(){
+			$('#about .preview-picture').addClass('pic-hide');
+
+		});
+
+		$('#about .preview-control .fa').click(function(){
+			
+			if(dtIndex==0){
+				dtIndex=1;
+			}else{
+				dtIndex=0;
+			}
+			$('#about .preview-picture img').addClass('pic-hide');
+			$('#about .preview-picture img').eq(dtIndex).removeClass('pic-hide');
+			
+		});
+		
+	});
 
 	//点击导航按钮缓慢滚动
 	$("nav a").click(function(event){
