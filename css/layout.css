@@ -7,9 +7,8 @@ a{
 	text-decoration: none;
 	color: rgb(0,0,0);
 }
-a:hover{
-	color: rgb(255,81,38);
-}
+
+a:hover{ color: rgb(255,81,38); }
 
 html,body{
 	box-sizing: border-box; 
@@ -17,18 +16,17 @@ html,body{
 }
 
 .header{
-	width: 100%;
-	margin: 0 auto;
 	position: fixed;
 	top: 0;
 	left: 0;
+	width: 100%;
+	margin: 0 auto;
 	background-color: rgba(255,255,255,1);
 	z-index: 99;
 }
 
 .header img{
 	height: 60px;
-	/*border: 1px rgb(255,0,0) solid;*/
 	margin-top: 10px;
 }
 
@@ -41,35 +39,24 @@ nav{
 
 nav ul li{
    float:left;
-   list-style: none;
    height:80px;
    line-height: 80px;
    margin:0 10px;
-   /*border: 1px rgb(0,0,0) solid;*/
    font-size: 1.2em;
-}
-nav ul li:last-child{
-	margin-right: 20px;
+   list-style: none;
 }
 
-.mobile-menu{
-	display: none;
-}
+nav ul li:last-child{ margin-right: 20px; }
 
-.clear-float{
-	clear: both;
-}
+.mobile-menu{ display: none; }
 
-#home{
-	height: 100%;
-	background-color: rgb(0,200,150);
-}
-.main{
-	/*width: 90%;*/
-	margin: 0 auto;
-}
+.clear-float{ clear: both; }
 
-#products{/*新增*/
+#home{ height: 100%; }
+
+.main{ margin: 0 auto; }
+
+#products{
 	width: 90%;
 	margin: auto;
 }
@@ -78,12 +65,9 @@ nav ul li:last-child{
 	text-align: center;
 	font-size: 2.5em;
 	margin: 2em auto 1em;
-	/*border-bottom: 1px orange solid; */ 
 }
 
-#products .item-one{
-	margin-bottom: 2em;
-}
+#products .item-one{ margin-bottom: 2em; }
 
 #products .item-one-sum{
 	float: left;
@@ -105,13 +89,10 @@ nav ul li:last-child{
 	width: 50%;
 	text-align: center;
 }
-.item-one-display>div{
-	text-align: center;
-}
-.item-one-display>div>img{
-	width:100%;
-	border: 1px rgb(255,255,0) solid;
-}
+
+.item-one-display>div{ text-align: center; }
+
+.item-one-display>div>img{ width:100%; }
 
 .item-one-display p{
 	text-indent: 2em;
@@ -119,13 +100,13 @@ nav ul li:last-child{
 }
 
 .item-one-display input{
-	outline: medium;
 	width: 80px;
 	height: 30px;
 	border: 2px rgb(255,81,38) solid;
 	border-radius: 5px;
 	color: rgb(255,81,38);
 	background-color: transparent;
+	outline: medium;
 }
 
 .item-one-display input:hover{
@@ -145,9 +126,7 @@ nav ul li:last-child{
 	color: rgb(255,81,38);
 }
 
-.item-two-sum p{
-	margin: 0 10px;
-}
+.item-two-sum p{ margin: 0 10px; }
 
 .item-two .pic-show{
 	float: left;
@@ -155,65 +134,33 @@ nav ul li:last-child{
 	height:300px;
 	background: rgb(0,200,200) url(../images/img_1.png) no-repeat center;
 	background-size: 100%;
-	/*border: 1px rgb(0,0,0) solid;*/
 }
 
-.item-two-display {
-	margin: 2em auto;
-}
-
-.row{
-	/*border: 1px rgb(0,0,0) solid;*/
-}
+.item-two-display { margin: 2em auto; }
 
 .item-two-display article{
 	float: left;
-	/*width: 50%;*/
-	/*height: 200px;*/
 	position: relative;
-	/*min-height: 150px;*/
-
 	width: 50%;
-	/*border:1px rgb(0,0,255) solid;*/
 }
+
 .item-two-display article span{
 	position: absolute;
 	left: 0;
 	top: 0;
 	display: inline-block;
 	margin: 30px 20px 30px;
-	/*border: 1px rgb(0,0,0) solid;*/
 }
 
-.item-two-display article span img{
-	width:120%;
-}
-.item-two-display article:nth-child(1){
-	/*background-color: rgba(20,202,20,0.8)*/
-}
-/*.item-two-display article:nth-child(1) span{
-	
-	margin-left: 100px;
-	margin-top: 30px;
-}*/
+.item-two-display article span img{ width:120%; }
 
-.item-two-display article div{
-	/*margin-left: 100px;
-	margin-top: 30px;*/
-	margin: 30px 20px 20px 110px;
-}
+.item-two-display article div{ margin: 30px 20px 20px 110px; }
 
-.item-two-display article h4{
-margin:0 0 1em 1em;
-}
+.item-two-display article h4{ margin:0 0 1em 1em; }
 
-.item-two-display article p{
-line-height: 1.5em;
-}
+.item-two-display article p{ line-height: 1.5em; }
 
-#examples{
-	margin: 2em auto;
-}
+#examples{ margin: 2em auto; }
 
 #examples h2{
 	text-align: center;
@@ -221,49 +168,40 @@ line-height: 1.5em;
 }
 
 .examples-display{
-	/*text-align: center;*/
 	height: 250px;
-	/*background-color: rgba(200,10,0,0.9);*/
-
-	width: 1200px;/*新增*/
-	margin: 0 auto;/*新增*/
+	width: 1200px;
+	margin: 0 auto;
 }
-
-
-
-
 
 
 #about{
-	width:80%; /*改*/
+	width:80%; 
 	margin: 2em auto;
 }
+
 #about h2{
 	text-align: center;
 	margin: 2em auto;
 }
+
 #about p{
+	margin: 2em 0;
 	text-indent: 2em;
 	text-align: justify;
 	font-size: 1.1em;
 	line-height: 1.5em;
-	margin: 2em 0;
-	letter-spacing:2px;
-}
-#about p a{
-	color:rgb(255,81,38);
-}
-#about>div{
-	text-align: center;
-
+	letter-spacing: 2px;
 }
 
+#about p a{ color: rgb(255,81,38); }
 
+#about>div{ text-align: center; }
 
 #about>div dl:first-child dt{
 	background: url(../images/img_1.png) no-repeat center;
 	background-size: cover;
 }
+
 #about>div dl:last-child dt{
 	background: url(../images/hezuo.png) no-repeat center;
 	background-size: cover;
@@ -272,32 +210,28 @@ line-height: 1.5em;
 
 
 #about dl{
-	/*border: 1px rgb(255,0,0) solid;*/
 	display: inline-block;
-	width:45%;
+	width: 45%;
 	text-align: center;
 }
-#about>div dl:first-child{
-	margin-right:4%;
-}
+
+#about>div dl:first-child{ margin-right:4%; }
+
 #about dl dt{
-	height:300px;
-	/*width:45%;*/
+	height: 300px;
 	border-radius: 5%;
 	background-color: rgb(200,200,0);
 }
 
-#about dl dd{
-	margin: 1em;
-}
+#about dl dd{ margin: 1em; }
 
 #contact{
-	width: 90%;/*新增*/
+	width: 90%;
 	margin: 2em auto;
 }
-#contact>div{
-	margin: 2em 0;
-}
+
+#contact>div{ margin: 2em 0; }
+
 #contact h2{
 	margin: 2em auto;
 	text-align: center;
@@ -314,10 +248,8 @@ line-height: 1.5em;
 	width: 50%;
 	float: left;
 }
-.contact-info h3{
-	/*text-align: center;*/
-	margin: 2em 2em 1em;
-}
+
+.contact-info h3{ margin: 2em 2em 1em; }
 
 .contact-info ul{
 	list-style: none;
@@ -330,30 +262,25 @@ line-height: 1.5em;
 	color: rgb(50,50,50);
 }
 
-.contact-info ul li i{
-	font-size: 1.2em;
-}
+.contact-info ul li i{ font-size: 1.2em; }
 
-.contact-info ul li a{
-	color: rgb(255,81,38);
-}
-
+.contact-info ul li a{ color: rgb(255,81,38); }
 
 .contact-help{
+	position: relative;
 	height:400px;
-	border: 1px rgb(0,0,0) solid;
 	margin: 4em 0;
+	border: 1px rgb(0,0,0) solid;
 	background: rgb(46,173,166) url(../images/beijing.jpg) no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
-	position: relative;
 }
 
 .contact-help .cover{
+	position: absolute;
 	height:400px;
 	width:100%;
 	background-color: rgba(0,0,0,0.5);
-	position: absolute;
 	top:0;
 	left:0;
 }
@@ -364,12 +291,11 @@ line-height: 1.5em;
 	color: rgb(255,255,255);
 	font-size: 1.2em;
 }
-.contact-help h3 a{
-	color: rgb(255,81,38);
-}
-.contact-help h3 a:hover{
-	color: rgb(255,255,255);
-}
+
+.contact-help h3 a{ color: rgb(255,81,38); }
+
+.contact-help h3 a:hover{ color: rgb(255,255,255); }
+
 .footer{
 	text-align: center;
 	margin:3em auto;
@@ -377,13 +303,9 @@ line-height: 1.5em;
 
 @media screen and (max-width:800px){
 
-.main{
-	width: 98%;
-}
+.main{ width: 98%; }
 
-#products h2{
-	font-size: 2em; 
-}
+#products h2{ font-size: 2em; }
 
 
 #products .item-one-sum{
@@ -406,8 +328,6 @@ line-height: 1.5em;
 }
 
 .item-two-sum p{
-	/*text-align: center;
-	margin:2em 0;*/
 	width: 500px;
 	margin:2em auto;
 }
@@ -424,31 +344,20 @@ line-height: 1.5em;
 }
 
 
+.item-two-display article span{ margin: 10px 20px 30px; }
 
-.item-two-display article span{
-	margin: 10px 20px 30px;
-}
+.item-two-display article span img{ width:100%; }
 
-.item-two-display article span img{
-	width:100%;
-}
+.item-two-display article div{ margin: 30px 20px 20px 110px; }
 
-.item-two-display article div{
-	margin: 30px 20px 20px 110px;
-}
-
-#about h2{
-	margin: 3em auto 1em;
-}
+#about h2{ margin: 3em auto 1em; }
 
 #about dl{
 	width:70%;
 	margin: 2em auto;
 }
 
-#about>div dl:first-child{
-	margin-right:auto;
-}
+#about>div dl:first-child{ margin-right:auto; }
 
 #map{
 	width: 90%;
@@ -462,85 +371,45 @@ line-height: 1.5em;
 	margin: 1em auto;
 }
 
-.contact-info h3{
-	margin-left: 20% ;
-}
+.contact-info h3{ margin-left: 20%; }
 
 }
 
 @media screen and (max-width:680px){
 
-.header{
-	/*width: 100%;
-	margin: 0 auto;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: rgba(255,255,255,1);
-	z-index: 99;*/
-	
-	/*position: static;*/
-	/*background-color: transparent;*/
-	text-align: center;
-}
+.header{ text-align: center; }
 
 .header img{
-	/*height: 60px;*/
-	/*border: 1px rgb(255,0,0) solid;*/
-	/*margin-top: 10px;*/
 	height:50px;
 	margin: 0 auto;
-
 }
 
 nav{
-	/*float: right; 
-	font-size: 15px;
-	font-family: 微软雅黑;
-	text-align: center;*/
-
 	position: fixed;
 	top: 0;
 	right: -80%;
-	/*border: 1px rgb(0,0,0) solid;*/
 	height: 100%;
 	width: 70%;
 	background-color: rgba(0,0,0,0.9);
 	z-index: 100;
-	/*display: none;*/
 }
 
-nav ul{
-	margin-top:5em;
-}
+nav ul{ margin-top:5em; }
 
 nav ul li{
-   /*float:left;
-   list-style: none;
-   height:80px;
-   line-height: 80px;
-   margin:0 10px;*/
-   /*border: 1px rgb(0,0,0) solid;*/
-   /*font-size: 1.2em;*/
-
    float: none;
    height:2em;
    line-height: 2em;
    margin: auto auto auto 2em;
-   /*border: 1px rgb(0,0,0) solid;*/
    text-align: left;
    letter-spacing:3px;
 }
-nav ul li a{
-	color: rgba(255,255,255,0.6);
-}
-nav ul li:last-child{
-	/*margin-right: 20px;*/
-	margin-right: auto;
-}
+
+nav ul li a{ color: rgba(255,255,255,0.6); }
+
+nav ul li:last-child{ margin-right: auto; }
 
 .mobile-menu{
-	/*display: none;*/
 	display: inline-block;
 	position: fixed;
 	top: 0;
@@ -549,7 +418,6 @@ nav ul li:last-child{
 	float: right;
 	font-size: 2em;
 	margin: 0.1em 0.6em;
-	/*border: 1px rgb(0,0,0) solid;*/
 	z-index: 102;
 
 }
@@ -577,117 +445,56 @@ nav ul li:last-child{
 
 
 .item-two-sum p{
-	/*width: 500px;
-	margin:2em auto;*/
 	width:auto;
 	text-align: justify;
 	margin:2em 1em;
 }
 
 
-.item-two-display article span{
-	/*border: 1px rgb(0,0,0) solid;*/
-	margin:-10px 0 0 0;
-}
+.item-two-display article span{ margin:-10px 0 0 0; }
 
 .item-two-display article span img{
 	width:60%;
 	margin-left: 10px;
 }
 
-.item-two-display article div{
-	margin: 30px 10px ;
-}
+.item-two-display article div{ margin: 30px 10px ; }
 
-.item-two-display article h4{
- margin:1em 0 1em 4em;
-}
+.item-two-display article h4{ margin:1em 0 1em 4em; }
 
-.item-two-display article p{
-text-align: justify;
-}
+.item-two-display article p{ text-align: justify; }
 
-#about h2{
-	margin: 3em auto 1em;
-}
+#about h2{ margin: 3em auto 1em; }
 
 #about dl{
 	width:98%;
 	margin: 1em auto;
 }
 
-#map{
-	width: 98%;
-}
+#map{ width: 98%; }
 
-.contact-info{
-	width: 100%;
-}
+.contact-info{ width: 100%; }
 
 .contact-info h3{
 	margin: 2em auto 1em;
 	text-align: center;
 }
 
-.contact-info ul{
-	margin:1em 1em;
-}
+.contact-info ul{ margin: 1em 1em; }
 
-.contact-info ul li{
-	font-size: 1em;
-}
+.contact-info ul li{ font-size: 1em; }
 
-.contact-help h3{
-	font-size: 1em;
-}
+.contact-help h3{ font-size: 1em; }
 
+.contact-help{ height: 300px; }
 
+.contact-help .cover{ height:300px; }
 
-
-
-.contact-help{
-	/*height:400px;
-	border: 1px rgb(0,0,0) solid;
-	margin: 4em 0;
-	background: rgb(46,173,166) url(../images/beijing.jpg) no-repeat center;
-	background-size: cover;
-	background-attachment: fixed;
-	position: relative;*/
-	height:300px;
-}
-
-.contact-help .cover{
-	/*height:400px;
-	width:100%;
-	background-color: rgba(0,0,0,0.5);
-	position: absolute;
-	top:0;
-	left:0;*/
-	height:300px;
-}
-
-.contact-help h3{
-	/*text-align: center;
-	margin-top:180px;
-	color: rgb(255,255,255);
-	font-size: 1.2em;*/
-	margin-top:130px;
-}
-/*.contact-help h3 a{
-	color: rgb(255,81,38);
-}
-.contact-help h3 a:hover{
-	color: rgb(255,255,255);
-}*/
-
-
-
-
+.contact-help h3{ margin-top:130px; }
 
 .footer{
 	text-align: justify;
 	margin:3em 1em 2em;
 }
-
 
 }
