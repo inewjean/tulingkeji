@@ -13,26 +13,31 @@ $(document).ready(function(){
 		stp_wid=items.eq(0).width()*-1+'px';
 
 	next_btn.click(function(){
-		wrap.animate({marginLeft:stp_wid},800,function(){
-			//setTimeout(function(){
+		if(!wrap.is(':animated')){
+			wrap.animate({marginLeft:stp_wid},800,function(){
 				$('.examples-slider-wrap .item:first').appendTo($('.examples-slider-wrap'));
 				wrap.css('marginLeft',0);
-			//},50);
-			
-		});
+			});
+			if(curNum==4){
+				curNum=0;
+			}else{
+				curNum++;
+			}
+			btn.removeClass('active');
+			btn.eq(curNum).addClass('active');
 
-		if(curNum==4){
-			curNum=0;
-		}else{
-			curNum++;
 		}
-		btn.removeClass('active');
-		btn.eq(curNum).addClass('active');
+		
+
+		
 	});
 
 	pre_btn.click(function(){
-		wrap.css('marginLeft',stp_wid);
+		
+		if(!wrap.is(':animated')){
 		$('.examples-slider-wrap .item:last').prependTo($('.examples-slider-wrap'));
+		wrap.css('marginLeft',stp_wid);
+
 		wrap.animate({marginLeft:0},800);
 
 		if(curNum==0){
@@ -42,6 +47,9 @@ $(document).ready(function(){
 		}
 		btn.removeClass('active');
 		btn.eq(curNum).addClass('active');
+		}
+	
+		
 	});
 
 /* 待完善
