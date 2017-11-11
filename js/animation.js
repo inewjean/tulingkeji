@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 	
-	//"有料"模块 滚动动画
+//"有料"模块 滚动动画
 	//1.左右箭头，控制向左/右滑动一个图片
 	//2.点击原点
 	var wrap=$('.examples-slider-wrap'),
@@ -27,9 +27,6 @@ $(document).ready(function(){
 			btn.eq(curNum).addClass('active');
 
 		}
-		
-
-		
 	});
 
 	pre_btn.click(function(){
@@ -48,8 +45,6 @@ $(document).ready(function(){
 		btn.removeClass('active');
 		btn.eq(curNum).addClass('active');
 		}
-	
-		
 	});
 
 /* 待完善
@@ -91,10 +86,74 @@ $(document).ready(function(){
 	}
 
 */
+
+	//移动端左右滑屏
+	var startx, starty;
+    
+    function getAngle(angx, angy) {
+        return Math.atan2(angy, angx) * 180 / Math.PI;
+    };
+ 
+    function getDirection(startx, starty, endx, endy) {
+        var angx = endx - startx;
+        var angy = endy - starty;
+        var result = 0;
+ 
+        if (Math.abs(angx) < 2 && Math.abs(angy) < 2) {
+            return result;
+        }
+ 
+        var angle = getAngle(angx, angy);
+        if (angle >= -135 && angle <= -45) {
+            result = 1;
+        } else if (angle > 45 && angle < 135) {
+            result = 2;
+        } else if ((angle >= 135 && angle <= 180) || (angle >= -180 && angle < -135)) {
+            result = 3;
+        } else if (angle >= -45 && angle <= 45) {
+            result = 4;
+        }
+ 
+        return result;
+    }
+    //手指接触屏幕
+   $('.examples-display').get(0).addEventListener("touchstart", function(e) {
+        startx = e.touches[0].pageX;
+        starty = e.touches[0].pageY;
+    }, false);
+    //手指离开屏幕
+   $('.examples-display').get(0).addEventListener("touchend", function(e) {
+        var endx, endy;
+        endx = e.changedTouches[0].pageX;
+        endy = e.changedTouches[0].pageY;
+        var direction = getDirection(startx, starty, endx, endy);
+        switch (direction) {
+            case 0:
+                //alert("未滑动！");
+                break;
+            case 1:
+                //alert("向上！")
+                break;
+            case 2:
+                //alert("向下！")
+                break;
+            case 3:
+                //alert("向左！")
+                next_btn.click();
+                break;
+            case 4:
+                //alert("向右！")
+                pre_btn.click();
+                break;
+            default:
+        }
+    }, false);
+
+	
 	//"关于我们"模块 交互动画
 	$('#about dt').click(function(){
 		var dtIndex=$(this).parent().index();
-		console.log(dtIndex);
+		//console.log(dtIndex);
 		$('#about .preview-picture img').addClass('pic-hide');
 		$('#about .preview-picture img').eq(dtIndex).removeClass('pic-hide');
 		$('#about .preview-picture').removeClass('pic-hide');

@@ -1,6 +1,9 @@
 *{
 	box-sizing: border-box; 
 }
+
+
+
 .header{
 	background-color: transparent;
 }
@@ -328,6 +331,10 @@
 }
 
 @media screen and (max-width: 620px){
+
+.ex-tab{
+	display:none;
+}
 
 .examples-display{ height: 280px; }
 
